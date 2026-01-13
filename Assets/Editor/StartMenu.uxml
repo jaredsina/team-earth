@@ -1,0 +1,7 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/StartMenu.uss?fileID=7433441132597879392&amp;guid=463d2dca4987841ecb6b8eb3bc008fa0&amp;type=3#StartMenu" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <ui:Button name="Play" style="background-image: url(&quot;project://database/Assets/Editor/Screenshot%202026-01-06%20at%205.35.27%E2%80%AFPM.png?fileID=2800000&amp;guid=768fbf8b422da438888de575fbfe7e60&amp;type=3#Screenshot 2026-01-06 at 5.35.27 PM&quot;); width: 240px; height: 88px;" />
+        <ui:Button text="&#10;" name="Exit" style="background-image: url(&quot;project://database/Assets/Editor/Screenshot%202026-01-06%20at%205.36.01%E2%80%AFPM.png?fileID=2800000&amp;guid=d5424b150efb841c69d6c5102acdd31f&amp;type=3#Screenshot 2026-01-06 at 5.36.01 PM&quot;); width: 240px; height: 88px;" />
+    </ui:VisualElement>
+</ui:UXML>

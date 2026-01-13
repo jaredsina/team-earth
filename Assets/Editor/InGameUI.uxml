@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/InGameUI.uss?fileID=7433441132597879392&amp;guid=7888e69bf10f44eb78c6704e84204665&amp;type=3#InGameUI" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Label text="Quests:" name="Quests" style="color: rgb(248, 248, 255);" />
+        <ui:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Editor/image-removebg-preview-4.png?fileID=2800000&amp;guid=97e855a50de154f5cb83f900b77bc41a&amp;type=3#image-removebg-preview-4&quot;); width: 32px; height: 27px; background-size: 18% 8%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
+        <ui:Label text="       - Collect 5 Water Bottles" style="color: rgb(255, 255, 255); height: 18px; width: 263px;" />
+    </ui:VisualElement>
+</ui:UXML>
