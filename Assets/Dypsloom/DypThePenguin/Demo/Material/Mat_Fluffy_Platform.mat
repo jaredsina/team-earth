@@ -2,20 +2,27 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_Fluffy_Platform
-  m_Shader: {fileID: 4800000, guid: fca3af8bcdb0fdf4daf965743a826cbf, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_Shader: {fileID: -6465566751694194690, guid: 7a011e4531ac380449ee71d918918a98,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -75,7 +82,29 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
+    - Vector1_15C2AC2A: -5.98
+    - Vector1_4EED6C41: 2.23
+    - Vector1_52A42014: 1.39
+    - Vector1_71637B18: -0.88
+    - Vector1_A1BE6EF4: 1.22
+    - Vector1_A4598CD4: 4.1
+    - Vector1_BC42CF44: 0
+    - Vector1_C36803E9: 6.68
+    - Vector1_FF4791F9: 1.19
     - _Bias: 0
     - _Bias1: 0
     - _BlendOffset: 0.06
@@ -123,6 +152,8 @@ Material:
     - _Parallax: 0.02
     - _Power: 1.31
     - _Power1: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _Scale: 0.84
     - _Scale1: 0
     - _SmoothnessTextureChannel: 0
@@ -137,6 +168,14 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
+    - Color_3E857543: {r: 0.8490566, g: 0.7168921, b: 0.8490566, a: 0}
+    - Color_9C052003: {r: 0.990566, g: 0.65881985, b: 0.990566, a: 0}
+    - Color_BC334B1A: {r: 0.3224012, g: 0.990566, b: 0.78281736, a: 0}
+    - Color_BDAC7A53: {r: 0.39520293, g: 0.75534475, b: 0.7830189, a: 0}
+    - Color_D9261BB6: {r: 0.04356533, g: 0.8396226, b: 0.49743998, a: 0}
+    - Color_F02202D6: {r: 1, g: 1, b: 1, a: 0}
+    - Color_FEBF7329: {r: 0.49411768, g: 1, b: 0.8431373, a: 0}
+    - Vector3_5882722C: {r: 1, g: 0, b: 0, a: 0}
     - _Albedo: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0}
     - _BlendColor: {r: 0.0990566, g: 1, b: 0.66950315, a: 0}
     - _BlendColor2: {r: 0.77857035, g: 0.04160734, b: 0.8018868, a: 0}
@@ -159,3 +198,18 @@ Material:
     - _TopColor: {r: 0.9811321, g: 0.49519405, b: 0.85047823, a: 0}
     - _Vector0: {r: 0.65, g: 0.16, b: 1, a: 1}
     - _Vector1: {r: 1, g: 0.1, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
+--- !u!114 &16302628433144516
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  version: 10
