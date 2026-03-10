@@ -26,5 +26,9 @@ public class InGameUI : EditorWindow
         // Instantiate UXML
         VisualElement labelFromUXML = m_VisualTreeAsset.Instantiate();
         root.Add(labelFromUXML);
+
+        
+
     }
+    
 }
