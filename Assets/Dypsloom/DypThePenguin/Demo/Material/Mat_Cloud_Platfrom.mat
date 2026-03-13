@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mat_Cloud_Platfrom
-  m_Shader: {fileID: 4800000, guid: fca3af8bcdb0fdf4daf965743a826cbf, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 55fc7ed4109dfd641a81adcc4dd23792,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -76,6 +77,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_15C2AC2A: 0.5
+    - Vector1_4EED6C41: 0
+    - Vector1_A4598CD4: 1
+    - Vector1_BC42CF44: 0.1
+    - Vector1_C36803E9: -1
+    - Vector1_FF4791F9: 1.19
     - _Bias: 0.42
     - _BlendTransitionOffset: -0.55
     - _BlendTransitionRatio: 3.69
@@ -121,6 +128,11 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
+    - Color_3E857543: {r: 0.1647059, g: 0.4657273, b: 1, a: 0}
+    - Color_D9261BB6: {r: 0, g: 0.9800043, b: 1, a: 0}
+    - Color_F02202D6: {r: 0, g: 0.7657562, b: 1, a: 0}
+    - Color_FEBF7329: {r: 0.2734806, g: 0.8301887, b: 0, a: 0}
+    - Vector3_5882722C: {r: 1, g: 0, b: 0, a: 0}
     - _Albedo: {r: 0, g: 0, b: 0, a: 0}
     - _BlendColor: {r: 1, g: 0, b: 0, a: 0}
     - _BlendColor2: {r: 0.08960724, g: 1, b: 0, a: 0}
