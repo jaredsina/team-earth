@@ -456,7 +456,7 @@ TerrainCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: fba7ce18acac64664ac8417aa3c349f2, type: 2}
   m_EnableTreeColliders: 1
@@ -549,7 +549,7 @@ TerrainCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: c9eafad42fbed47828cb5673066d9f36, type: 2}
   m_EnableTreeColliders: 1
@@ -1130,7 +1130,7 @@ TerrainCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 6da15051f7045457ca647f8c3902437a, type: 2}
   m_EnableTreeColliders: 1
@@ -1942,7 +1942,7 @@ TerrainCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 8b48e97d41d4d41b4a698b8f3f58665d, type: 2}
   m_EnableTreeColliders: 1
@@ -2118,7 +2118,7 @@ TerrainCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 6bd77297e5b2c47968439d9c8bfaa04e, type: 2}
   m_EnableTreeColliders: 1
