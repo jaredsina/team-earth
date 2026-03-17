@@ -5,7 +5,7 @@ public class Timer : MonoBehaviour
 {
     public float timeRemaining = 60f;
     private Label timerLabel;
-    private bool isTimmerRunning = true;
+    public bool isTimmerRunning = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
