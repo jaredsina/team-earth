@@ -3,9 +3,22 @@
     <ui:Label text="03:00" name="Timer" style="color: rgb(255, 255, 255); font-size: 52px; -unity-text-align: upper-center; height: 58px;" />
     <ui:VisualElement name="QuestContainer" style="flex-grow: 1; height: auto; align-self: flex-start; margin-left: 80px; margin-top: 80px; width: 271px;">
         <ui:VisualElement style="flex-grow: 0; flex-direction: row-reverse; align-self: flex-start;">
-            <ui:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Editor/image-removebg-preview-4.png?fileID=2800000&amp;guid=97e855a50de154f5cb83f900b77bc41a&amp;type=3#image-removebg-preview-4&quot;); width: 50px; height: 40px; background-size: 18% 8%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
-            <ui:Label text="Quests:" name="Quests" style="color: rgb(248, 248, 255); -unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); align-content: flex-start; align-self: flex-start; font-size: 40px; width: 128px;" />
+            <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Editor/image-removebg-preview-4.png?fileID=2800000&amp;guid=97e855a50de154f5cb83f900b77bc41a&amp;type=3#image-removebg-preview-4&quot;); width: 50px; height: 40px; background-size: 18% 8%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
+            <ui:Label text="Quests:" name="Quests" style="color: rgb(248, 248, 255); -unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); align-content: flex-start; align-self: flex-start; font-size: 42px; width: 128px;" />
         </ui:VisualElement>
-        <ui:Label text="       - Collect 5 Water Bottles" name="Text" class="incomplete" style="height: 18px; width: 263px; -unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); font-size: 29px;" />
+        <ui:Label text="       - Collect 5 Water Bottles" name="Text" class="incomplete" style="height: 18px; width: 263px; -unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); font-size: 32px; padding-bottom: 40px;" />
+        <ui:VisualElement name="Inventory" style="flex-grow: 0;">
+            <ui:Label text="Inventory:" name="Inventorylabel" style="font-size: 32px; -unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); color: rgb(255, 255, 255);" />
+            <ui:VisualElement name="Plasticscontainer" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/164993-water-bottle-png-free-photo.png?fileID=2800000&amp;guid=79e0fccdacc70465498c9f3d20e94323&amp;type=3#164993-water-bottle-png-free-photo&quot;); width: 50px; height: 40px; background-size: 18% 8%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
+                <ui:Label text="Plastics:" name="Plastics" style="-unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); color: rgb(255, 255, 255); font-size: 32px;" />
+                <ui:Label text="4" name="Numberofplastics" style="-unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); font-size: 29px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Papercontainer" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/box_PNG49.png?fileID=2800000&amp;guid=753a05f048f864a748d4800586208d9c&amp;type=3#box_PNG49&quot;); width: 50px; height: 40px; background-size: 18% 8%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
+                <ui:Label text="Paper:" name="Paper" style="-unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); color: rgb(255, 255, 255); font-size: 32px;" />
+                <ui:Label text=" 2" name="Numberofpaper" style="-unity-font-definition: url(&quot;project://database/Assets/Cutes.otf?fileID=12800000&amp;guid=9def4cb37e1f146f393adacc5c326dcd&amp;type=3#Cutes&quot;); font-size: 29px; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
