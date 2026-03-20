@@ -46,5 +46,22 @@ public class InventoryManager : MonoBehaviour
             paperCount++;
             UpdateUI();
         }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            // Only remove if we have more than 0
+            if (plasticsCount > 0) 
+            {
+                plasticsCount--;
+                UpdateUI();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (paperCount > 0) 
+            {
+                paperCount--;
+                UpdateUI();
+            }
+        }
     }
 }
