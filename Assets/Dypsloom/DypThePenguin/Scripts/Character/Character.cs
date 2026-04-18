@@ -127,6 +127,12 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
                 }
                
             }
+            if (transform.position.y < -30)
+            {
+                Debug.Log("fell off");
+                Die();
+                //new Vector3(405, -3, 493);
+            }
 
             m_CharacterMover.Tick();
             m_CharacterRotator.Tick();
