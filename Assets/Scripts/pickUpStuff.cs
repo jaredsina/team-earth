@@ -23,12 +23,12 @@ public class pickUpStuff : MonoBehaviour
 
     public bool isInteracting;
     public InputAction interact;
-    public float minX = -5f;
-    public float maxX = 5f;
+    public float minX = 100f;
+    public float maxX = 160f;
     public float minY = 0f;
     public float maxY = 0f;
-    public float minZ = 0f;
-    public float maxZ = 5f;
+    public float minZ = 460f;
+    public float maxZ = 600f;
 
     private void OnEnable()
     {
@@ -62,7 +62,7 @@ public class pickUpStuff : MonoBehaviour
         {
                Debug.Log("Object interacted with");
                thingy.gameObject.GetComponent<AudioSource>().Play();
-               thingy.gameObject.GetComponent<Renderer>().enabled = false;
+               Destroy(thingy.gameObject);
            
             
         }
