@@ -6,9 +6,7 @@ public class Conversationstarterr : MonoBehaviour
     [SerializeField] private NPCConversation firstConversation;
     [SerializeField] private NPCConversation secondConversation;
 
-    [SerializeField] private NPCConversation thirdConversation; 
-
-    private int conversationIndex = 0; // 0 = first convo, 1 = second convo, 2 = third convo
+    private int conversationIndex = 0; // 0 = first convo, 1 = second convo
     private bool isTalking = false;
     private bool playerInTrigger = false;
 
@@ -35,8 +33,6 @@ public class Conversationstarterr : MonoBehaviour
                 conversationToStart = firstConversation;
             else if (conversationIndex == 1)
                 conversationToStart = secondConversation;
-            else if (conversationIndex == 2)
-                conversationToStart = thirdConversation; 
     
 
             if (conversationToStart != null)
