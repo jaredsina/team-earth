@@ -70,7 +70,7 @@ public class pickUpStuff : MonoBehaviour
 
 //        if (isInteracting)
 //        {
-
+// Adding comment to try and fix
 //            Debug.Log(distance);
 //            if (distance < 20)
 //            {
