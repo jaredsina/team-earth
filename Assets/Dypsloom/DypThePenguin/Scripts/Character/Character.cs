@@ -127,9 +127,10 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
                 }
                
             }
-            if (transform.position.y < -30)
+            if (transform.position.y < -100)
             {
                 Debug.Log("fell off");
+                //transform.position = m_SpawnTransform != null ? m_SpawnTransform.position : new Vector3(0,1,0);
                 Die();
                 //new Vector3(405, -3, 493);
             }
