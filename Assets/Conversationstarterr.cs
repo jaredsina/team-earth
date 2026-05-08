@@ -19,12 +19,17 @@ public class Conversationstarterr : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-            playerInTrigger = false;
+    Debug.Log("Something entered");
+
+    if (other.CompareTag("Player"))
+    {
+        Debug.Log("Player entered");
+        playerInTrigger = true;
     }
+}
 
     private void Update()
-    {
+    { 
         if (playerInTrigger && Input.GetKeyDown(KeyCode.E) && !isTalking)
         {
             NPCConversation conversationToStart = null;
