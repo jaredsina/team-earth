@@ -32,7 +32,7 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
             var charVelocity = m_Character.IsDead
                 ? Vector2.zero
                 : new Vector2( m_Character.CharacterInput.Horizontal, m_Character.CharacterInput.Vertical);
-            Debug.Log(charVelocity.x);
+            //Debug.Log(charVelocity.x);
             if (Mathf.Abs(charVelocity.x) < 0.1f &&
                 Mathf.Abs(charVelocity.y) < 0.1f) {
                 return;

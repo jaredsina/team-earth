@@ -77,6 +77,7 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
         public ICharacterMover CharacterMover => m_CharacterMover;
         public ICharacterAnimator CharacterAnimator => m_CharacterAnimator;
         public Inventory Inventory => m_Inventory;
+        private bool dying = false;
         public bool IsDead => m_IsDead;
         public bool IsGrounded
         {
@@ -116,6 +117,14 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
         /// </summary>
         protected virtual void Update()
         {
+            if (transform.position.y < -100 && dying ==false)
+            {
+                dying = true;
+                Debug.Log("fell off");
+                //transform.position = m_SpawnTransform != null ? m_SpawnTransform.position : new Vector3(0,1,0);
+                Die();
+                //new Vector3(405, -3, 493);
+            }
             if (m_CharacterController.isGrounded ) {
                 IsGrounded = true;
             } else if (
@@ -127,13 +136,7 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
                 }
                
             }
-            if (transform.position.y < -100)
-            {
-                Debug.Log("fell off");
-                //transform.position = m_SpawnTransform != null ? m_SpawnTransform.position : new Vector3(0,1,0);
-                Die();
-                //new Vector3(405, -3, 493);
-            }
+            
 
             m_CharacterMover.Tick();
             m_CharacterRotator.Tick();
@@ -169,8 +172,10 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
         /// </summary>
         public virtual void Die()
         {
+            Debug.Log("You died!");
+             m_DeathTask = ScheduleDeathRespawn();
             if(m_IsDead || m_DeathTask != null){return;}
-            m_DeathTask = ScheduleDeathRespawn();
+           
         }
 
         /// <summary>
@@ -179,6 +184,8 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
         /// <returns>Return the asynchronous task.</returns>
         protected virtual async Task ScheduleDeathRespawn()
         {
+            Debug.Log("Death Scheduled");
+            Respawn();
             CharacterAnimator.Die(true);
             m_IsDead = true;
             
@@ -186,12 +193,12 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
             m_DeathEffects?.SetActive(true);
 
             await Task.Delay((int)(m_RespawnDelay*1000f)-1600);
-            gameObject.SetActive(false);
+          
             OnDie?.Invoke();
 
             await Task.Delay(500);
             m_DeathTask = null;
-            Respawn();
+            
         }
 
         /// <summary>
@@ -199,10 +206,17 @@ namespace Dypsloom.DypThePenguin.Scripts.Character
         /// </summary>
         protected virtual void Respawn()
         {
+            CharacterController cc = GetComponent<CharacterController>();
+            dying = false;
+            cc.enabled = false;
+            transform.position =new Vector3(405,-3,493);
+            cc.enabled = true;
+            
+            Debug.Log("You have Respawned");
             m_DeathEffects?.SetActive(false);
             CharacterAnimator.Die(false);
             m_CharacterDamageable.Heal(int.MaxValue);
-            transform.position = m_SpawnTransform != null ? m_SpawnTransform.position : new Vector3(0,1,0);
+            
             gameObject.SetActive(true);
             m_IsDead = false;
         }
