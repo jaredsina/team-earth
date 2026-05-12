@@ -430,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conversationstarterr
   firstConversation: {fileID: 1389397343}
   secondConversation: {fileID: 790779207}
+  timer: {fileID: 0}
 --- !u!65 &515516965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -554,6 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conversationstarterr
   firstConversation: {fileID: 1389397343}
   secondConversation: {fileID: 790779207}
+  timer: {fileID: 0}
 --- !u!114 &790779207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +874,7 @@ GameObject:
   - component: {fileID: 2054529153}
   - component: {fileID: 2054529154}
   - component: {fileID: 2054529155}
+  - component: {fileID: 2054529156}
   m_Layer: 0
   m_Name: Quest UI
   m_TagString: Untagged
@@ -1237,6 +1240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conversationstarterr
   firstConversation: {fileID: 1389397343}
   secondConversation: {fileID: 790779207}
+  timer: {fileID: 2054529156}
 --- !u!54 &1099716102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1427,6 +1431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Conversationstarterr
   firstConversation: {fileID: 1389397343}
   secondConversation: {fileID: 790779207}
+  timer: {fileID: 0}
 --- !u!114 &1389397343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,6 +2076,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   plasticsCount: 0
   paperCount: 0
+--- !u!114 &2054529156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfc52db8c4354c4db25f0da80967fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timeRemaining: 180
+  isTimmerRunning: 0
 --- !u!1001 &2064857523
 PrefabInstance:
   m_ObjectHideFlags: 0

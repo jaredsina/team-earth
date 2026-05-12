@@ -9,7 +9,11 @@ public class Conversationstarterr : MonoBehaviour
     private int conversationIndex = 0; // 0 = first convo, 1 = second convo
     private bool isTalking = false;
     private bool playerInTrigger = false;
+    private Timer timer;
 
+    void Start(){
+timer = GameObject.Find("Quest UI").GetComponent<Timer>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -49,6 +53,7 @@ public class Conversationstarterr : MonoBehaviour
         if (isTalking && !ConversationManager.Instance.IsConversationActive)
         {
             isTalking = false;
+            timer.isTimmerRunning = true;
             conversationIndex++; // switches the conversations!!
         }
     }

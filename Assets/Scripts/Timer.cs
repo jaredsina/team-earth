@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 60f;
+    public float timeRemaining = 180f;
     private Label timerLabel;
     public bool isTimmerRunning = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
