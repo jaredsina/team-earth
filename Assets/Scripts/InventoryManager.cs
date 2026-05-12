@@ -9,6 +9,8 @@ public class InventoryManager : MonoBehaviour
 
     private Label plasticsLabel;
     private Label paperLabel;
+
+    private UIManager uiManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
     {
@@ -30,12 +32,16 @@ public class InventoryManager : MonoBehaviour
     
     void Start()
     {
-        
+        uiManager = GetComponent<UIManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (plasticsCount == 9 && paperCount == 9) {
+            uiManager.ColorChange();
+        }
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             plasticsCount++;

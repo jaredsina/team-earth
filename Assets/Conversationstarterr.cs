@@ -10,9 +10,11 @@ public class Conversationstarterr : MonoBehaviour
     private bool isTalking = false;
     private bool playerInTrigger = false;
     private Timer timer;
+    private UIManager uiManager;
 
     void Start(){
 timer = GameObject.Find("Quest UI").GetComponent<Timer>();
+uiManager = GameObject.Find("Quest UI").GetComponent<UIManager>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,6 +56,7 @@ timer = GameObject.Find("Quest UI").GetComponent<Timer>();
         {
             isTalking = false;
             timer.isTimmerRunning = true;
+            uiManager.AddQuest();
             conversationIndex++; // switches the conversations!!
         }
     }
