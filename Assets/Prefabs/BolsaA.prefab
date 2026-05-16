@@ -16,12 +16,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 087b1255c71ee2347baeedda35d2b7c9,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 394.22
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 087b1255c71ee2347baeedda35d2b7c9,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 685.24
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 087b1255c71ee2347baeedda35d2b7c9,
         type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: ff3cc514-689f-4cc4-b5b3-ca692f86db1b
-      m_Path: <Keyboard>/e
+      m_Path: <Keyboard>/q
       m_Interactions: 
       m_Processors: 
       m_Groups: 

@@ -60,9 +60,12 @@ public class pickUpStuff : MonoBehaviour
         isInteracting = interact.triggered;
         if (distance < 20 && isInteracting)
         {
-               Debug.Log("Object interacted with");
+               
                thingy.gameObject.GetComponent<AudioSource>().Play();
                Destroy(thingy.gameObject);
+               if(thingy.gameObject.tag == "Paper"){
+                    Debug.Log("Paper picked up");
+               }
            
             
         }
